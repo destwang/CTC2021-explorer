@@ -78,7 +78,7 @@
 		</div>
 
 		<p align="justify">
-			<b>CTC 2021</b> is a <b>C</b>hinese <b>T</b>ext <b>C</b>orrection <b>C</b>omprehension which aims to detect and correct errors in the text, is an important task of natural language process.
+			<b>CTC 2021</b> is a <b>C</b>hinese <b>T</b>ext <b>C</b>orrection which aims to detect and correct errors in the text, is an important task of natural language process.
 			In the past, text correction have used texts written by foreign language learners, and most of the errors in these texts are mistakes that native Chinese writers would not make.
 			A proofreading system for native Chinese speakers would be more helpful for government documents, press and publishing industries.
 			Therefore, CTC 2021 selects web texts written by native Chinese writers on the Internet as proofreading data, and examines the cognitive intelligence of the machine in terms of spelling errors, grammatical errors and faulty wording or formulation.
@@ -93,7 +93,7 @@
 			You may also be interested in a quick baseline system.
 			<ul class="list-unstyled">
 				<li>
-					<a class="btn actionBtn inverseBtn" href="https://github.com/destwang/CTC2021" download>
+					<a class="btn actionBtn inverseBtn" href="https://github.com/destwang/CTC2021/tree/main/ctc_gector" download>
 					Get Baseline Code</a>
 				</li>
 			</ul>
@@ -110,7 +110,7 @@
 		</p>
 
 		<p align="justify">
-			We provide pseudo data for training:
+			We also provide pseudo data for training:
 			<ul class="list-unstyled">
 				<li>
 					<a class="btn actionBtn inverseBtn" href="http://pan.iflytek.com/#/link/0CF7992308445E72001ED08F53266D25" download>
@@ -136,7 +136,7 @@
 			Have Questions?</h2>
 		</div>
 		<p>
-			Ask us questions at our   <a href="https://github.com/destwang/CTC2021">
+			Ask us questions at our  <a href="https://github.com/destwang/CTC2021">
 			GitHub repository</a>
 		</p>
 
@@ -161,14 +161,14 @@
 			</div>
 			<p align="justify">
 				<font face="helvetica">
-				The detection score and correction score are considered together, specifically, the evaluation result = 0.8 * detection score + 0.2 * correction score, where both the detection score and correction score are calculated using the F-score.
+					<b>Evaluation Metrics:</b> The detection score and correction score are considered together, specifically, the evaluation result = 0.8 * detection score + 0.2 * correction score, where both the detection score and correction score are calculated using the F-score.
 				</font>
 			</p>
 			<table class="table performanceTable">
 				<tr>
 					<th rowspan="2">Rank</th>
 					<th rowspan="2">Team</th>
-					<th colspan="2">score</th>
+					<th colspan="3">score</th>
 				</tr>
 				<tr>
 					<th>detect_f1</th>
@@ -181,689 +181,206 @@
 					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					苏州大学&阿里巴巴达摩院
-					<!-- <p class="institution"><font face="helvetica" size="2">AISpeech</p></td> -->
+					S&A
+					<p class="institution"><font face="helvetica" size="2">苏州大学; 阿里巴巴达摩院</p></td>
 					<td><b>68</b></td>
 					<td><b>64.6</b></td>
-					<td>67.32</td>
+					<td><b>67.32</b></td>
 				</tr>
 
 
 				<tr><td>
 					<p>2</p>
-					<span class="date label label-default">Nov 12, 2020</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					MacBERT-large-extData (single model)
-					<p class="institution"><font face="helvetica" size="2">AISpeech</p></td>
-					<td>77.998</td>
-					<td>92.882</td>
-					<td><b>38.492</b></td>
-					<td><b>67.109</b></td>
+					改的都队
+					<p class="institution"><font face="helvetica" size="2">清华大学</p></td>
+					<td>62.405</td>
+					<td>57.205</td>
+					<td>61.365</td>
 				</tr>
 
 
 				<tr><td>
 					<p>3</p>
-					<span class="date label label-default">Nov 3, 2020</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					RoBERTa-wwm-ext-large-extData (single model)
-					<p class="institution"><font face="helvetica" size="2">AISpeech</p></td>
-					<td>76.997</td>
-					<td>92.171</td>
-					<td>32.540</td>
-					<td>63.597</td>
+					znv_sentosa
+					<p class="institution"><font face="helvetica" size="2">深圳力维智联技术有限公司</p></td>
+					<td>55.035</td>
+					<td>43.055</td>
+					<td>52.639</td>
 				</tr>
 
 
 				<tr><td>
 					<p>4</p>
-					<span class="date label label-default">May 1, 2020</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					MacBERT-large (single model)
-					<p class="institution"><font face="helvetica" size="2">Joint Laboratory of HIT and iFLYTEK Research</p>
-					<a href="https://github.com/ymcui/MacBERT">[Cui et al., Findings of EMNLP 2020]</font></a></td>
-					<td>74.786</td>
-					<td>90.693</td>
-					<td>31.923</td>
-					<td>60.177</td>
+					C&L
+					<p class="institution"><font face="helvetica" size="2">北京理工大学</p></td>
+					<td>51.126</td>
+					<td>48.649</td>
+					<td>50.631</td>
 				</tr>
 
 
 				<tr><td>
 					<p>5</p>
-					<span class="date label label-default">Jan 22, 2021</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					ESPReader-large (single model)
-					<p class="institution"><font face="helvetica" size="2">Shanghai Jiao Tong University</p></td>
-					<td>77.201</td>
-					<td>91.476</td>
-					<td>30.357</td>
-					<td>58.396</td>
+					MDatai
+					<p class="institution"><font face="helvetica" size="2">上海蜜度信息技术有限公司-新浪微热点研究院</p></td>
+					<td>51.233</td>
+					<td>47.374</td>
+					<td>50.461</td>
 				</tr>
 
 
 				<tr><td>
 					<p>6</p>
-					<span class="date label label-default">Oct 14, 2019</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					RoBERTa-wwm-ext-large (single model)
-					<p class="institution"><font face="helvetica" size="2">Joint Laboratory of HIT and iFLYTEK Research</p>
-					<a href="https://arxiv.org/abs/1906.08101">[Cui et al., 2019]</font></a></td>
-					<td>74.198</td>
-					<td>90.604</td>
-					<td>31.548</td>
-					<td>60.074</td>
+					YCC
+					<p class="institution"><font face="helvetica" size="2">北京铀媒科技有限公司</p></td>
+					<td>49.804</td>
+					<td>42.745</td>
+					<td>48.392</td>
 				</tr>
 
 
 				<tr><td>
 					<p>7</p>
-					<span class="date label label-default">Nov 5, 2019</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					RoBERTa-wwm-ext-large (single model)
-					<p class="institution"><font face="helvetica" size="2">ChineseGLUE Team</p>
-					<a href="https://github.com/CLUEBenchmark">https://github.com/CLUEBenchmark</font></a></td>
-					<td>76.588</td>
-					<td>91.566</td>
-					<td>30.159</td>
-					<td>57.229</td>
+					NJU-NLP
+					<p class="institution"><font face="helvetica" size="2">南京大学自然语言处理实验室</p></td>
+					<td>49.02</td>
+					<td>39.651</td>
+					<td>47.146</td>
 				</tr>
 
 
 				<tr><td>
 					<p>8</p>
-					<span class="date label label-default">Nov 1, 2019</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					ALBERT-xlarge (single model)
-					<p class="institution"><font face="helvetica" size="2">ChineseGLUE Team</p>
-					<a href="https://github.com/CLUEBenchmark">https://github.com/CLUEBenchmark</font></a></td>
-					<td>75.220</td>
-					<td>90.922</td>
-					<td>28.770</td>
-					<td>57.864</td>
+					四条人
+					<p class="institution"><font face="helvetica" size="2">蚂蚁金服</p></td>
+					<td>41.505</td>
+					<td>35.68</td>
+					<td>40.34</td>
 				</tr>
 
 
 				<tr><td>
 					<p>9</p>
-					<span class="date label label-default">July 5, 2021</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					Macbert-QueryRestoration (single model)
-					<p class="institution"><font face="helvetica" size="2">xiaobing.ai</p></td>
-					<td>77.140</td>
-					<td>91.425</td>
-					<td>27.976</td>
-					<td>56.160</td>
+					ai编程的小拓
+					<p class="institution"><font face="helvetica" size="2">拓尔思信息技术股份有限公司</p></td>
+					<td>38.372</td>
+					<td>31.628</td>
+					<td>37.023</td>
 				</tr>
 
 
 				<tr><td>
 					<p>10</p>
-					<span class="date label label-default">Nov 1, 2019</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					RoBERTa-large (single model)
-					<p class="institution"><font face="helvetica" size="2">ChineseGLUE Team</p>
-					<a href="https://github.com/CLUEBenchmark">https://github.com/CLUEBenchmark</font></a></td>
-					<td>76.118</td>
-					<td>90.949</td>
-					<td>26.587</td>
-					<td>54.594</td>
+					zybank
+					<p class="institution"><font face="helvetica" size="2">中原银行</p></td>
+					<td>37.863</td>
+					<td>33.217</td>
+					<td>36.934</td>
 				</tr>
 
 
 				<tr><td>
 					<p>11</p>
-					<span class="date label label-default">May 1, 2020</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					MacBERT-base (single model)
-					<p class="institution"><font face="helvetica" size="2">Joint Laboratory of HIT and iFLYTEK Research</p>
-					<a href="https://github.com/ymcui/MacBERT">[Cui et al., Findings of EMNLP 2020]</font></a></td>
-					<td>73.179</td>
-					<td>89.486</td>
-					<td>30.159</td>
-					<td>54.039</td>
+					华夏—龙盈战队
+					<p class="institution"><font face="helvetica" size="2">华夏银行股份有限公司; 龙盈智达（北京）科技有限公司</p></td>
+					<td>28.646</td>
+					<td>21.875</td>
+					<td>27.292</td>
 				</tr>
 
 
 				<tr><td>
 					<p>12</p>
-					<span class="date label label-default">May 1, 2019</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					Dual BERT (w/ SQuAD) (single model)
-					<p class="institution"><font face="helvetica" size="2">Joint Laboratory of HIT and iFLYTEK Research</p>
-					<a href="https://arxiv.org/abs/1909.00361">[Cui et al., EMNLP 2019]</font></a></td>
-					<td>73.600</td>
-					<td>90.200</td>
-					<td>27.800</td>
-					<td>55.200</td>
+					yl_test
+					<p class="institution"><font face="helvetica" size="2">北京猿力未来科技有限公司</p></td>
+					<td>26.516</td>
+					<td>16.925</td>
+					<td>24.598</td>
 				</tr>
 
 
 				<tr><td>
 					<p>13</p>
-					<span class="date label label-default">Jan 22, 2021</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					ESPReader-base (single model)
-					<p class="institution"><font face="helvetica" size="2">Shanghai Jiao Tong University</p></td>
-					<td>75.567</td>
-					<td>89.926</td>
-					<td>26.587</td>
-					<td>53.129</td>
+					晓梦
+					<p class="institution"><font face="helvetica" size="2">人民网</p></td>
+					<td>20.997</td>
+					<td>14.173</td>
+					<td>19.632</td>
 				</tr>
 
 
 				<tr><td>
 					<p>14</p>
-					<span class="date label label-default">June 25, 2021</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					MacBERT-large-fact-evidence (single model)
-					<p class="institution"><font face="helvetica" size="2">Anonymous</p></td>
-					<td>72.952</td>
-					<td>89.374</td>
-					<td>26.389</td>
-					<td>55.009</td>
+					only-one
+					<p class="institution"><font face="helvetica" size="2">北邮</p></td>
+					<td>20.709</td>
+					<td>14.468</td>
+					<td>19.461</td>
 				</tr>
 
 
 				<tr><td>
 					<p>15</p>
-					<span class="date label label-default">Nov 1, 2019</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					ALBERT-large (single model)
-					<p class="institution"><font face="helvetica" size="2">ChineseGLUE Team</p>
-					<a href="https://github.com/CLUEBenchmark">https://github.com/CLUEBenchmark</font></a></td>
-					<td>73.667</td>
-					<td>90.175</td>
-					<td>27.976</td>
-					<td>51.622</td>
+					zndx纠错好难
+					<p class="institution"><font face="helvetica" size="2">中南大学</p>
+					<td>17.714</td>
+					<td>9.714</td>
+					<td>16.114</td>
 				</tr>
 
 
 				<tr><td>
 					<p>16</p>
-					<span class="date label label-default">Aug 19, 2019</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					XLNet-mid (single model)
-					<p class="institution"><font face="helvetica" size="2">Joint Laboratory of HIT and iFLYTEK Research</p>
-					<a href="https://github.com/ymcui/Chinese-XLNet">[Cui et al., 2019]</font></a></td>
-					<td>69.300</td>
-					<td>89.200</td>
-					<td>29.100</td>
-					<td>55.800</td>
-				</tr>
-
-
-				<tr><td>
-					<p>17</p>
-					<span class="date label label-default">May 11, 2020</span>
-				</td>
-				<td style="word-break:break-word;">
-					UER (single model)
-					<p class="institution"><font face="helvetica" size="2">Tencent Oteam</p>
-					<a href="https://github.com/dbiir/UER-py">https://github.com/dbiir/UER-py</font></a></td>
-					<td>78.795</td>
-					<td>91.992</td>
-					<td>24.206</td>
-					<td>46.951</td>
-				</tr>
-
-
-				<tr><td>
-					<p>18</p>
-					<span class="date label label-default">Oct 22, 2020</span>
-				</td>
-				<td style="word-break:break-word;">
-					RoBERTa-wwm-ext-large (single model)
-					<p class="institution"><font face="helvetica" size="2">AISpeech</p></td>
-					<td>74.954</td>
-					<td>90.286</td>
-					<td>23.214</td>
-					<td>52.138</td>
-				</tr>
-
-
-				<tr><td>
-					<p>19</p>
-					<span class="date label label-default">Nov 1, 2019</span>
-				</td>
-				<td style="word-break:break-word;">
-					ERNIE 1.0 (maxlen=512) (single model)
-					<p class="institution"><font face="helvetica" size="2">ChineseGLUE Team</p>
-					<a href="https://github.com/CLUEBenchmark">https://github.com/CLUEBenchmark</font></a></td>
-					<td>73.320</td>
-					<td>89.621</td>
-					<td>26.190</td>
-					<td>50.976</td>
-				</tr>
-
-
-				<tr><td>
-					<p>20</p>
-					<span class="date label label-default">Nov 5, 2019</span>
-				</td>
-				<td style="word-break:break-word;">
-					RoBERTa-wwm-ext-base (single model)
-					<p class="institution"><font face="helvetica" size="2">ChineseGLUE Team</p>
-					<a href="https://github.com/CLUEBenchmark">https://github.com/CLUEBenchmark</font></a></td>
-					<td>73.892</td>
-					<td>89.748</td>
-					<td>25.198</td>
-					<td>50.759</td>
-				</tr>
-
-
-				<tr><td>
-					<p>21</p>
-					<span class="date label label-default">Sep 10, 2019</span>
-				</td>
-				<td style="word-break:break-word;">
-					RoBERTa-wwm-ext (single model)
-					<p class="institution"><font face="helvetica" size="2">Joint Laboratory of HIT and iFLYTEK Research</p>
-					<a href="https://arxiv.org/abs/1906.08101">[Cui et al., 2019]</font></a></td>
-					<td>72.600</td>
-					<td>89.400</td>
-					<td>26.200</td>
-					<td>51.000</td>
-				</tr>
-
-
-				<tr><td>
-					<p>22</p>
-					<span class="date label label-default">Nov 5, 2019</span>
-				</td>
-				<td style="word-break:break-word;">
-					BERT-wwm-ext (single model)
-					<p class="institution"><font face="helvetica" size="2">ChineseGLUE Team</p>
-					<a href="https://github.com/CLUEBenchmark">https://github.com/CLUEBenchmark</font></a></td>
-					<td>73.238</td>
-					<td>88.784</td>
-					<td>22.421</td>
-					<td>46.430</td>
-				</tr>
-
-
-				<tr><td>
-					<p>23</p>
-					<span class="date label label-default">Jul 30, 2019</span>
-				</td>
-				<td style="word-break:break-word;">
-					BERT-wwm-ext (single model)
-					<p class="institution"><font face="helvetica" size="2">Joint Laboratory of HIT and iFLYTEK Research</p>
-					<a href="https://arxiv.org/abs/1906.08101">[Cui et al., 2019]</font></a></td>
-					<td>71.400</td>
-					<td>87.700</td>
-					<td>24.000</td>
-					<td>47.300</td>
-				</tr>
-
-
-				<tr><td>
-					<p>24</p>
-					<span class="date label label-default">May 1, 2019</span>
-				</td>
-				<td style="word-break:break-word;">
-					Dual BERT (single model)
-					<p class="institution"><font face="helvetica" size="2">Joint Laboratory of HIT and iFLYTEK Research</p>
-					<a href="https://arxiv.org/abs/1909.00361">[Cui et al., EMNLP 2019]</font></a></td>
-					<td>70.400</td>
-					<td>88.100</td>
-					<td>23.800</td>
-					<td>47.900</td>
-				</tr>
-
-
-				<tr><td>
-					<p>25</p>
-					<span class="date label label-default">Nov 5, 2019</span>
-				</td>
-				<td style="word-break:break-word;">
-					XLNet-mid (single model)
-					<p class="institution"><font face="helvetica" size="2">ChineseGLUE Team</p>
-					<a href="https://github.com/CLUEBenchmark">https://github.com/CLUEBenchmark</font></a></td>
-					<td>66.517</td>
-					<td>86.099</td>
-					<td>24.008</td>
-					<td>52.859</td>
-				</tr>
-
-
-				<tr><td>
-					<p>26</p>
-					<span class="date label label-default">Jun 20, 2019</span>
-				</td>
-				<td style="word-break:break-word;">
-					BERT-wwm (single model)
-					<p class="institution"><font face="helvetica" size="2">Joint Laboratory of HIT and iFLYTEK Research</p>
-					<a href="https://arxiv.org/abs/1906.08101">[Cui et al., 2019]</font></a></td>
-					<td>70.500</td>
-					<td>87.400</td>
-					<td>21.000</td>
-					<td>47.000</td>
-				</tr>
-
-
-				<tr><td>
-					<p>27</p>
-					<span class="date label label-default">Nov 1, 2019</span>
-				</td>
-				<td style="word-break:break-word;">
-					BERT-base (google) (single model)
-					<p class="institution"><font face="helvetica" size="2">ChineseGLUE Team</p>
-					<a href="https://github.com/CLUEBenchmark">https://github.com/CLUEBenchmark</font></a></td>
-					<td>69.724</td>
-					<td>87.174</td>
-					<td>21.230</td>
-					<td>44.861</td>
-				</tr>
-
-
-				<tr><td>
-					<p>28</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					Z-Reader (single model)
-					<p class="institution"><font face="helvetica" size="2">ZhuiYi</p></td>
-					<td>74.178</td>
-					<td>88.145</td>
-					<td>13.889</td>
-					<td>37.422</td>
-				</tr>
-
-
-				<tr><td>
-					<p>29</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					MCA-Reader (ensemble)
-					<p class="institution"><font face="helvetica" size="2">BISTU</p></td>
-					<td>71.175</td>
-					<td>88.090</td>
-					<td>15.476</td>
-					<td>37.104</td>
-				</tr>
-
-
-				<tr><td>
-					<p>30</p>
-					<span class="date label label-default">Mar 27, 2019</span>
-				</td>
-				<td style="word-break:break-word;">
-					P-Reader (single model)
-					<p class="institution"><font face="helvetica" size="2">swjtu_PF</p></td>
-					<td>65.189</td>
-					<td>84.386</td>
-					<td>15.079</td>
-					<td>39.583</td>
-				</tr>
-
-
-				<tr><td>
-					<p>31</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					RCEN (ensemble)
-					<p class="institution"><font face="helvetica" size="2">6ESTATES PTE LTD</p></td>
-					<td>68.662</td>
-					<td>85.743</td>
-					<td>15.278</td>
-					<td>34.479</td>
-				</tr>
-
-
-				<tr><td>
-					<p>32</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					MCA-Reader (single model)
-					<p class="institution"><font face="helvetica" size="2">BISTU</p></td>
-					<td>68.335</td>
-					<td>85.707</td>
-					<td>13.690</td>
-					<td>33.964</td>
-				</tr>
-
-
-				<tr><td>
-					<p>33</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					GM-Reader (ensemble)
-					<p class="institution"><font face="helvetica" size="2">BUPT CIST</p></td>
-					<td>64.045</td>
-					<td>83.046</td>
-					<td>15.675</td>
-					<td>37.315</td>
-				</tr>
-
-
-				<tr><td>
-					<p>34</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					OmegaOne (ensemble)
-					<p class="institution"><font face="helvetica" size="2">Fudan University</p></td>
-					<td>66.272</td>
-					<td>82.788</td>
-					<td>12.103</td>
-					<td>30.859</td>
-				</tr>
-
-
-				<tr><td>
-					<p>35</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					RCEN (single model)
-					<p class="institution"><font face="helvetica" size="2">6ESTATES PTE LTD</p></td>
-					<td>64.576</td>
-					<td>83.136</td>
-					<td>10.516</td>
-					<td>30.994</td>
-				</tr>
-
-
-				<tr><td>
-					<p>36</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					GM-Reader (single model)
-					<p class="institution"><font face="helvetica" size="2">BUPT CIST</p></td>
-					<td>60.470</td>
-					<td>80.035</td>
-					<td>13.690</td>
-					<td>33.990</td>
-				</tr>
-
-
-				<tr><td>
-					<p>37</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					OmegaOne (single model)
-					<p class="institution"><font face="helvetica" size="2">Fudan University</p></td>
-					<td>64.188</td>
-					<td>81.539</td>
-					<td>10.119</td>
-					<td>29.716</td>
-				</tr>
-
-
-				<tr><td>
-					<p>38</p>
-					<span class="date label label-default">Mar 28, 2021</span>
-				</td>
-				<td style="word-break:break-word;">
-					Xlingual-base42 (single model)
-					<p class="institution"><font face="helvetica" size="2">KEG</p></td>
-					<td>65.189</td>
-					<td>83.661</td>
-					<td>0.922</td>
-					<td>15.995</td>
-				</tr>
-
-
-				<tr><td>
-					<p>39</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					R-NET (single model)
-					<p class="institution"><font face="helvetica" size="2">ShanXi University</p></td>
-					<td>50.112</td>
-					<td>73.353</td>
-					<td>9.921</td>
-					<td>29.324</td>
-				</tr>
-
-
-				<tr><td>
-					<p>40</p>
-					<span class="date label label-default">Nov 1, 2019</span>
-				</td>
-				<td style="word-break:break-word;">
-					ALBERT-tiny (single model)
-					<p class="institution"><font face="helvetica" size="2">ChineseGLUE Team</p>
-					<a href="https://github.com/CLUEBenchmark">https://github.com/CLUEBenchmark</font></a></td>
-					<td>53.687</td>
-					<td>75.738</td>
-					<td>6.746</td>
-					<td>25.600</td>
-				</tr>
-
-
-				<tr><td>
-					<p>41</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					SXU-Reader (single model)
-					<p class="institution"><font face="helvetica" size="2">ShanXi University</p></td>
-					<td>44.270</td>
-					<td>70.673</td>
-					<td>6.548</td>
-					<td>28.116</td>
-				</tr>
-
-
-				<tr><td>
-					<p>42</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					Unnamed System (single model)
-					<p class="institution"><font face="helvetica" size="2">THUIR & ILPS</p></td>
-					<td>44.883</td>
-					<td>66.859</td>
-					<td>7.341</td>
-					<td>22.317</td>
-				</tr>
-
-
-				<tr><td>
-					<p>43</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					Unnamed System (single model)
-					<p class="institution"><font face="helvetica" size="2">USST NLP</p></td>
-					<td>37.916</td>
-					<td>63.502</td>
-					<td>5.159</td>
-					<td>18.687</td>
-				</tr>
-
-
-				<tr><td>
-					<p>44</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					SXU-Reader (ensemble)
-					<p class="institution"><font face="helvetica" size="2">ShanXi University</p></td>
-					<td>46.210</td>
-					<td>70.482</td>
-					<td>0.000</td>
-					<td>0.000</td>
-				</tr>
-
-
-				<tr><td>
-					<p>45</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					Unnamed System (single model)
-					<p class="institution"><font face="helvetica" size="2">Wuhan University</p></td>
-					<td>22.288</td>
-					<td>46.774</td>
-					<td>2.183</td>
-					<td>21.587</td>
-				</tr>
-
-
-				<tr><td>
-					<p>46</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					Unnamed System (single model)
-					<p class="institution"><font face="helvetica" size="2">LittleBai - OpenMindClub</p></td>
-					<td>10.848</td>
-					<td>37.231</td>
-					<td>0.397</td>
-					<td>9.498</td>
-				</tr>
-
-
-				<tr><td>
-					<p>47</p>
-					<span class="date label label-default">Sep 17, 2018</span>
-				</td>
-				<td style="word-break:break-word;">
-					Unnamed System (single model)
-					<p class="institution"><font face="helvetica" size="2">JSPI-POAL</p></td>
-					<td>0.449</td>
-					<td>34.224</td>
-					<td>2.579</td>
-					<td>20.078</td>
-				</tr>
-
-
-				<tr><td>
-					<p>48</p>
-					<span class="date label label-default">May 31, 2021</span>
-				</td>
-				<td style="word-break:break-word;">
-					XLQA (single model)
-					<p class="institution"><font face="helvetica" size="2">Anonymous</p></td>
-					<td>1.961</td>
-					<td>32.438</td>
-					<td>0.198</td>
-					<td>8.687</td>
+					DAWN
+					<p class="institution"><font face="helvetica" size="2">MideaAIIC</p>
+					<td>6.326</td>
+					<td>3.128</td>
+					<td>5.686</td>
 				</tr>
 
 			</table>
