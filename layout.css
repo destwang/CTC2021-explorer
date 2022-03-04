@@ -153,7 +153,7 @@
 }
 .inverseBtn {
   background-color: #fff;
-  color: #DC3D3C !important;
+  color: #0e91a8 !important;
 }
 .inverseBtn:hover {
   color: #fff !important;
@@ -177,7 +177,7 @@ button:focus {
 }
 #topNavbar {
   border: none;
-  background: #0ebfd6;  /*v1:  #C13C3C v2:  #463494 */
+  background: #0e91a8;  /*v1:  #C13C3C v2:  #463494 */
   margin-bottom: 0px;
 }
 #topNavbar .leftNav {
