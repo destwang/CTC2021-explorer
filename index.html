@@ -42,7 +42,7 @@
 			<div class="leftNav">
 				<div class="brandDiv">
 					<a class="navbar-brand" href="./">
-					CTC2021</a>
+					CTC 2021</a>
 				</div>
 			</div>
 		</div>
@@ -52,10 +52,10 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1 id="appTitle">
-						<font face="arial"><b>CMRC 2018</b></font>
+						<font face="arial"><b>CTC 2021</b></font>
 					</h1>
 					<h2 id="appSubtitle"><font face="helvetica">
-					A Span-Extraction Dataset for Chinese Machine Reading Comprehension
+					Chinese Text Correction
 					</font></h2>
 				</div>
 			</div>
@@ -70,50 +70,54 @@
 <div>
 <div style="width:32%;float:left;">
 	<h2></h2>
-	<div class="infoCard">		
+	<div class="infoCard">
 	<div class="infoBody">
 		<div class="infoHeadline">
 			<h2>
-			What is CMRC 2018?</h2>
+			What is CTC 2021?</h2>
 		</div>
 
 		<p align="justify">
-			<b>CMRC 2018</b> is a <b>C</b>hinese <b>M</b>achine <b>R</b>eading <b>C</b>omprehension dataset that was used in
-			<a href="https://hfl-rc.github.io/cmrc2018/">The Second Evaluation Workshop on Chinese Machine Reading Comprehension</a>.
-			Specifically, CMRC 2018 is a span-extraction reading comprehension dataset that is similar to <a href="https://rajpurkar.github.io/SQuAD-explorer/">SQuAD</a>.
-			Besides the regular training, development, and test set, we also include a challenging set that need comprehensive reasoning over multiple sentences, which is far more difficult.
+			<b>CTC 2021</b> is a <b>C</b>hinese <b>T</b>ext <b>C</b>orrection <b>C</b>omprehension which aims to detect and correct errors in the text, is an important task of natural language process.
+			In the past, text correction have used texts written by foreign language learners, and most of the errors in these texts are mistakes that native Chinese writers would not make.
+			A proofreading system for native Chinese speakers would be more helpful for government documents, press and publishing industries.
+			Therefore, CTC 2021 selects web texts written by native Chinese writers on the Internet as proofreading data, and examines the cognitive intelligence of the machine in terms of spelling errors, grammatical errors and faulty wording or formulation.
+			Given a text, the participators should build models to detect the wrong words and error types, and correct them.
 		</p>
-
-		<a class="btn actionBtn" href="https://www.aclweb.org/anthology/D19-1600/">
-		Paper [Cui et al., EMNLP 2019]</a>
-		<a class="btn actionBtn" href="https://www.aclweb.org/anthology/D19-1600.bib">
-		BibTeX [Cui et al., EMNLP 2019]</a>
-
 
 		<div class="infoHeadline">
 			<h2>Getting Started</h2>
 		</div>
 
 		<p align="justify">
-			Download a copy of the dataset (distributed under the  <a href="http://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0</a> license):
+			You may also be interested in a quick baseline system.
 			<ul class="list-unstyled">
-				<li>
-					<a class="btn actionBtn inverseBtn" href="https://github.com/ymcui/cmrc2018/tree/master/squad-style-data" download>
-					Download CMRC 2018 Dataset</a>
-				</li>
-			</ul>
-		</p>
-
-		<p align="justify">
-			You may also be interested in a quick baseline system based on pre-trained language model (such as BERT).
-			<ul class="list-unstyled">
-				<li>
-					<a class="btn actionBtn inverseBtn" href="https://github.com/ymcui/cmrc2018" download>
+				<li>https://
+					<a class="btn actionBtn inverseBtn" href="https://github.com/destwang/CTC2021" download>
 					Get Baseline Code</a>
 				</li>
 			</ul>
 		</p>
 
+		<p align="justify">
+			Download baseline model (download password: <b>HJiB</b>):
+			<ul class="list-unstyled">
+				<li>
+					<a class="btn actionBtn inverseBtn" href="http://pan.iflytek.com/#/link/A5ACCEB6F7F0182D6980559C14B3D760" download>
+					Download baseline model</a>
+				</li>
+			</ul>
+		</p>
+
+		<p align="justify">
+			We provide pseudo data for training (download password: <b>girA</b>):
+			<ul class="list-unstyled">
+				<li>
+					<a class="btn actionBtn inverseBtn" href="http://pan.iflytek.com/#/link/0CF7992308445E72001ED08F53266D25" download>
+					Download CTC 2021 Dataset</a>
+				</li>
+			</ul>
+		</p>
 
 		<div class="infoHeadline">
 			<h2>Official Submission</h2>
@@ -132,16 +136,10 @@
 			Have Questions?</h2>
 		</div>
 		<p>
-			Ask us questions at our   <a href="https://github.com/ymcui/cmrc2018">
+			Ask us questions at our   <a href="https://github.com/destwang/CTC2021">
 			GitHub repository</a>
-			or at <a href="mailto:cmrc2018@126.com">
-			cmrc2018 [at] 126 [dot] com</a>
-		.</p>
+		</p>
 
-	</div>
-
-	<div class="infoSubheadline">
-		<a class="github-button" href="https://github.com/ymcui/cmrc2018" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star ymcui/cmrc2018 on GitHub">CMRC 2018</a>
 	</div>
 
 </div>
@@ -163,47 +161,31 @@
 			</div>
 			<p align="justify">
 				<font face="helvetica">
-				CMRC 2018 challenge set requires comprehensive reasoning over multiple clues in the passage, while keeping the original span-extraction format, which is far more challenging than the test set. Will your system surpass the humans on this task?
+				The detection score and correction score are considered together, specifically, the evaluation result = 0.8 * detection score + 0.2 * correction score, where both the detection score and correction score are calculated using the F-score.
 				</font>
 			</p>
 			<table class="table performanceTable">
 				<tr>
 					<th rowspan="2">Rank</th>
-					<th rowspan="2">Model</th>
-					<th colspan="2">Test</th>
-					<th colspan="2">Challenge</th>
+					<th rowspan="2">Team</th>
+					<th colspan="2">score</th>
 				</tr>
 				<tr>
-					<th>EM</th>
-					<th>F1</th>
-					<th>EM</th>
-					<th>F1</th>
-				</tr>
-
-				<tr class="human-row">
-					<td></td>
-					<td>
-						Human Performance				
-						<p class="institution"><font face="helvetica" size="2">Joint Laboratory of HIT and iFLYTEK Research</p>
-						<a href="https://www.aclweb.org/anthology/D19-1600/">[Cui et al., EMNLP 2019]</font></a>
-					</td>
-					<td>92.400</td>
-					<td>97.914</td>
-					<td>90.382</td>
-					<td>95.248</td>
+					<th>detect_f1</th>
+					<th>correct_f1</th>
+					<th>final_score</th>
 				</tr>
 
 				<tr><td>
 					<p>1</p>
-					<span class="date label label-default">Dec 8, 2020</span>
+					<span class="date label label-default">Sep 3, 2021</span>
 				</td>
 				<td style="word-break:break-word;">
-					MacBERT-large-extData-v2 (single model)
-					<p class="institution"><font face="helvetica" size="2">AISpeech</p></td>
-					<td><b>80.409</b></td>
-					<td><b>93.768</b></td>
-					<td>36.706</td>
-					<td>66.905</td>
+					苏州大学&阿里巴巴达摩院
+					<!-- <p class="institution"><font face="helvetica" size="2">AISpeech</p></td> -->
+					<td><b>68</b></td>
+					<td><b>64.6</b></td>
+					<td>67.32</td>
 				</tr>
 
 
